@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up Form | Asan Bajar</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+    <link
+      rel="stylesheet "
+      media="screen and (max-width: 768px) "
+      href="css/mobile.css "
+    />
+
+    <!-- Main css -->
+    <link rel="stylesheet " href="css/style-main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet " href="scss/layouts/responsive.scss" />
+  </head>
+
+  <body>
+    <header id="navbar-contain">
+      <div class="flex-item-1">
+        <div class="whatthe dropbtn" onclick="menuDrop()">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+        <div class="dropdown">
+          <div onclick="menuDrop()" class="dropbtn">Menu</div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="#content-1" class="here">Cooking Essentials</a>
+            <a href="#content-2" class="here">Snacks</a>
+            <a href="#content-3" class="here">Beverages</a>
+            <a href="#content-4" class="here">Packaged Foods</a>
+            <!-- <a href="#0">Dairy & Meats</a>
+            <a href="#0">Home Essentials</a> -->
+          </div>
+        </div>
+        <div class="search-bar">
+          <form>
+            <input type="text" placeholder="Search" />
+          </form>
+        </div>
+      </div>
+      <div id="show-on-scroll">
+        <span>Asan Bajar</span>
+      </div>
+      <div class="flex-item-2">
+        <div class="favorite-show">
+          <a href="#0"><i class="far fa-heart fa-1x"></i></a>
+        </div>
+        <div class="sign-in-info-icon">
+          <a href="signin.html"><i class="far fa-user-circle fa-1x"></i></a>
+        </div>
+        <div class="sign-in-info">
+          <a href="signin.html">Sign In</a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <!-- Sign up form -->
+      <section class="signup">
+        <div class="container">
+          <div class="signup-content">
+            <div class="signup-form">
+              <h2 class="form-title">Sign up</h2>
+              <form method="POST" class="register-form" id="register-form">
+                <div class="form-group">
+                  <label for="name"
+                    ><i class="zmdi zmdi-account material-icons-name"></i
+                  ></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name"><i class="zmdi zmdi-phone"></i></label>
+                  <input
+                    type="number"
+                    name="name"
+                    id="name"
+                    placeholder="Your Phone Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"><i class="zmdi zmdi-email"></i></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                  <input
+                    type="password"
+                    name="pass"
+                    id="pass"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="re-pass"><i class="zmdi zmdi-pin"></i></label>
+                  <input
+                    type="password"
+                    name="re_pass"
+                    id="re_pass"
+                    placeholder="Enter your address"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="checkbox"
+                    name="agree-term"
+                    id="agree-term"
+                    class="agree-term"
+                  />
+                  <label for="agree-term" class="label-agree-term"
+                    ><span><span></span></span>I agree all statements in
+                    <a href="#" class="term-service">Terms of service</a></label
+                  >
+                </div>
+                <div class="form-group form-button">
+                  <input
+                    type="submit"
+                    name="signup"
+                    id="signup"
+                    class="form-submit"
+                    value="Register"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="signup-image">
+              <figure>
+                <img src="img/signup-image.jpg" alt="sing up image" />
+              </figure>
+              <a href="signin.html" class="signup-image-link"
+                >I am already member</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

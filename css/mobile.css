@@ -1,0 +1,42 @@
+/* h2 {
+        font-size: 25px !important;
+    }
+    
+    .form-group,
+     ::placeholder {
+        font-size: 12px;
+    } */
+
+.form-group {
+    line-height: 1em !important;
+}
+
+.form-submit {
+    margin: 5px 0px 0px;
+}
+
+.main {
+    padding: 30px 0 !important;
+    /* background-color: black; */
+}
+
+.signin-form,
+.signup-form {
+    padding: 2px !important;
+    margin: 2 auto !important;
+}
+
+.signin-content,
+.signup-content {
+    padding: 20px;
+    padding-bottom: 20px !important;
+}
+
+.signin-image figure,
+.signup-image figure {
+    display: none;
+}
+
+.form-button {
+    margin-bottom: 0 !important;
+}
